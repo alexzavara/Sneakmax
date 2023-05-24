@@ -1,0 +1,99 @@
+@import "../mixins";
+
+.header {
+  background-color: var(--east-bay-color);
+  &__container {
+    height: rem(60);
+    display: flex;
+    align-items: center;
+  }
+  &__cart {
+    text-align: center;
+    flex: 0 0 rem(38);
+    padding: 0;
+    margin: 0;
+    button {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 12px;
+        left: 12px;
+        width: 16px;
+        height: 16px;
+        background: var(--carnation-color);
+        border-radius: 100%;
+      }
+      &::after {
+        position: absolute;
+        content: "1";
+        top: 12px;
+        left: 17px;
+        width: 7px;
+        height: 14px;
+        font-size: rem(14);
+        color: var(--light-color);
+      }
+      svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        fill: var(--light-color);
+        transition: fill 0.3s ease-in-out;
+        &:focus {
+          outline: none;
+        }
+        @include hover {
+          fill: var(--hover-color);
+        }
+        &:active {
+          fill: var(--active-color);
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  flex: 1 1 auto;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  &__link {
+    color: var(--light-color);
+    font-size: rem(14);
+    line-height: 1.2;
+    letter-spacing: rem(0.05);
+    transition: color 0.3s ease-in-out;
+    &:focus {
+      outline: none;
+    }
+    @include hover {
+      color: var(--hover-color);
+    }
+    &:active {
+      color: var(--active-color);
+    }
+  }
+}
+.nav__link.focus-visible {
+  outline: solid;
+  outline-color: var(--active-color);
+  //border-color: var(--active-color);
+  color: var(--light-color);
+}
+
+.cart__btn.focus-visible {
+  outline: solid;
+  outline-color: var(--active-color);
+  //border-color: var(--active-color);
+  color: var(--light-color);
+}

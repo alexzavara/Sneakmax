@@ -1,0 +1,50 @@
+.catalog {
+  padding: 60px 0;
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: rem(30);
+    line-height: 30px;
+    color: var(--riverbed-color);
+  }
+
+  &__left {
+    padding: 20px;
+    grid-column: 3 span;
+    border-radius: 4px;
+    background-color: var(--bg-color);
+  }
+  &__grid {
+    grid-column: 9 span;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Intro Book';
+    font-weight: 400;
+    font-size: rem(24);
+    line-height: 24px;
+    color: var(--riverbed-color);
+  }
+
+  &__caption {
+    font-family: 'Intro Book';
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 16px;
+    color: var(--riverbed-color);
+  }
+
+  &__prop {
+    margin-bottom: 20px;
+  }
+}
+
+.catalog-list {
+  grid-template-columns: repeat(9, 1fr);
+  &__item {
+    grid-column: 3 span;
+  }
+}
