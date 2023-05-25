@@ -30,6 +30,8 @@
   }
 
   &__caption {
+    display: block;
+    margin-bottom: 10px;
     font-family: 'Intro Book';
     font-weight: 400;
     font-size: rem(16);
@@ -39,6 +41,11 @@
 
   &__prop {
     margin-bottom: 20px;
+  }
+
+  &__prop-checkboxes {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
