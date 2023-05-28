@@ -17,10 +17,12 @@
   "dependencies": {
     "@popperjs/core": "^2.11.7",
     "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
     "graph-modal": "^1.0.6",
     "graph-tabs": "^1.0.2",
     "inputmask": "^5.0.8",
     "just-validate": "^3.10.0",
+    "nouislider": "^15.7.0",
     "rellax": "^1.12.1",
     "simplebar": "^5.3.9",
     "smooth-scroll": "^16.1.3",

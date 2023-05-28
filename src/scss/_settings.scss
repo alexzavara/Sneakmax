@@ -142,13 +142,14 @@ a {
     line-height: 16px;
     color: var(--riverbed-color);
     padding-left: 35px;
-
+    outline: none;
     &::before {
       top: -3px;
       border-color: var(--cameo-color);
       border-radius: 4px;
       width: 24px;
       height: 24px;
+
     }
     &::after {
       top: -3px;
@@ -159,3 +160,4 @@ a {
     }
   }
 }
+

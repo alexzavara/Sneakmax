@@ -46,7 +46,11 @@
 }
 
 .custom-checkbox__field:focus + .custom-checkbox__content::before {
-  outline: 2px solid #f00;
+  outline: none;
+}
+
+.custom-checkbox__field.focus-visible + .custom-checkbox__content::before  {
+  outline: 1px solid var(--tuna-color);
   outline-offset: 2px;
 }
 
@@ -54,3 +58,7 @@
   opacity: 0.4;
   pointer-events: none;
 }
+
+
+
+

@@ -1,0 +1,41 @@
+.noUi {
+  &-base {
+    cursor: pointer;
+  }
+  &-connect  {
+    background-color: var(--riverbed-color);
+    height: 4px;
+  }
+
+  &-target {
+    background-color: var(--cameo-color);
+    height: 4px;
+    width: 98.5%;
+  }
+
+  &-handle{
+  &::after {
+    display: none;
+  }
+  &::before {
+    display: none;
+  }
+  }
+
+  &-touch-area  {
+    width: 5px;
+    height: 20px;
+    background: var(--riverbed-color);
+    border: 1px solid var(--bg-color);
+    border-radius: 4px;
+  }
+  &-horizontal &-handle {
+    width: 0;
+    height: 0;
+    right: 0;
+    top: -10px;
+  }
+
+}
+
+
