@@ -1,6 +1,20 @@
 .about {
+  position: relative;
   background-color: var(--main-bg-color);
   color: var(--light-color);
+  &::before {
+    position: absolute;
+    content: '';
+    top: 1px;
+    left: -9px;
+    transform: rotate(360deg);
+    width: 550px;
+    height: 424px;
+    background-image: url(../../img/about-bg.png);
+    background-size:cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+  }
   &__left {
     padding-top: 220px;
     padding-left: 5px;

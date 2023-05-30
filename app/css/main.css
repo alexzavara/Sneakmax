@@ -859,8 +859,25 @@ a {
 }
 
 .about {
+  position: relative;
   background-color: var(--main-bg-color);
   color: var(--light-color);
+}
+.about::before {
+  position: absolute;
+  content: "";
+  top: 1px;
+  left: -9px;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  width: 550px;
+  height: 424px;
+  background-image: url(../../img/about-bg-1.png);
+  background-size: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background-repeat: no-repeat;
 }
 .about__left {
   padding-top: 220px;
