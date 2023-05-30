@@ -28,6 +28,7 @@
   }
   &--secondary {
     background: var(--riverbed-color);
+    padding: rem(22) rem(77);
     @include hover {
       background-color: var(--tuna-color);
       color: var(--light-color);

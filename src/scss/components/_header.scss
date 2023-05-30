@@ -1,7 +1,7 @@
 @import "../mixins";
 
 .header {
-  background-color: var(--east-bay-color);
+  background-color: var(--main-bg-color);
   &__container {
     height: rem(60);
     display: flex;

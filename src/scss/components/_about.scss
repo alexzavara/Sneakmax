@@ -1,0 +1,77 @@
+.about {
+  background-color: var(--main-bg-color);
+  color: var(--light-color);
+  &__left {
+    padding-top: 220px;
+    padding-left: 5px;
+    grid-column: 5 span;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--light-color);
+    font-weight: 700;
+    font-size: rem(30);
+    line-height: 30px;
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: rem(400);
+    font-family: 'Intro Book';
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 140%;
+    color: var(--light-color);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 35px;
+  }
+
+  &__author {
+    position: relative;
+    font-family: 'Intro Bold';
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: 20px;
+    color: var(--light-color);
+    &::before {
+      position: absolute;
+      content: '';
+      top: calc(50% - 2px);
+      left: -50px;
+      background-color: var(--light-color);
+      height: 3px;
+      width: 30px;
+    }
+  }
+  &__right {
+    grid-column: 6 / 5 span;
+    margin-right: -20px;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    padding-bottom: 116%;
+    transform-origin: 0 100%;
+    transform: skewX(-17deg) translatez(1px);
+    overflow:hidden;
+    &:before{
+      content:'';
+      position:absolute;
+      width:136%;
+      height:100%;
+      background-image:url('../../img/about-img.jpg');
+      background-size:cover;
+      background-position:center;
+      transform-origin:inherit;
+      transform:skewX(17deg);
+    }
+  }
+
+}
