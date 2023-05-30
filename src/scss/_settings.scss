@@ -127,37 +127,5 @@ a {
   gap: 20px;
 }
 
-@import 'mixins';
 
-.custom-checkbox {
-  @include custom-checkbox;
-
-  display: inline-flex;
-  align-items: center;
-
-  &__content {
-    font-family: 'Intro Book';
-    font-weight: 400;
-    font-size: rem(16);
-    line-height: 16px;
-    color: var(--riverbed-color);
-    padding-left: 35px;
-    outline: none;
-    &::before {
-      top: -3px;
-      border-color: var(--cameo-color);
-      border-radius: 4px;
-      width: 24px;
-      height: 24px;
-
-    }
-    &::after {
-      top: -3px;
-      width: 24px;
-      height: 24px;
-      background-image: url(../img/check.svg);
-      background-size: 15px 12px;
-    }
-  }
-}
 

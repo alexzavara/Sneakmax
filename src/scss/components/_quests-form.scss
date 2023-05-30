@@ -1,0 +1,25 @@
+.quests-form {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Intro Book';
+    font-weight: 400;
+    font-size: rem(24);
+    line-height: 24px;
+    color: var(--riverbed-color);
+  }
+  &__list {
+    gap: 20px;
+    column-gap: 70px;
+  }
+  &__card {
+    grid-column: 4 span;
+  }
+  &__img {
+    margin-bottom: 10px;
+  }
+}
