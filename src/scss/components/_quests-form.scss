@@ -23,3 +23,23 @@
     margin-bottom: 10px;
   }
 }
+
+.quests-form--second {
+  padding-bottom: 20px;
+  .quests-form__card {
+    grid-column: 2 span;
+  }
+
+  .quests-form__list {
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .quests-form__title {
+    margin-bottom: 40px;
+  }
+
+  .quests-form__img {
+    margin: 0;
+  }
+}
