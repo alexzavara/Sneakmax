@@ -330,10 +330,10 @@
 </section>
 
       <section class="quests">
-  <div class="container quests__container">
+  <div class="container quests__container quests__container--first visually-hidden">
     <h2 class="quests__title">Мы подберем идеальную пару для вас</h2>
     <p class="quests__descr">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </p>
-    <div class="quests-form quests-form--first visually-hidden">
+    <div class="quests-form">
       <h3 class="quests-form__title">Какой тип кроссовок рассматриваете?</h3>
       <ul class="quests-form__list list-reset grid">
         <li class="quests-form__card">
@@ -392,7 +392,15 @@
         </li>
       </ul>
     </div>
-    <div class="quests-form quests-form--second">
+    <div class="quests__wrapper">
+      <span class="quests__num">1 из 3</span>
+      <button class="btn-reset btn quests__btn">Следующий шаг</button>
+    </div>
+  </div>
+  <div class="container quests__container quests__container--second visually-hidden">
+    <h2 class="quests__title">Мы подберем идеальную пару для вас</h2>
+    <p class="quests__descr">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </p>
+    <div class="quests-form">
       <h3 class="quests-form__title">Какой размер вам подойдет?</h3>
       <ul class="quests-form__list list-reset grid">
         <li class="quests-form__card">
@@ -437,11 +445,40 @@
         </li>
       </ul>
       <img src="../img/quests-form-2.jpg" width="980px" height="282px" alt="" class="quests-form__img">
-
     </div>
     <div class="quests__wrapper">
       <span class="quests__num">1 из 3</span>
       <button class="btn-reset btn quests__btn">Следующий шаг</button>
+    </div>
+  </div>
+  <div class="container quests__container quests__container--third visually-hidden">
+    <h2 class="quests__title">Мы подберем идеальную пару для вас</h2>
+    <p class="quests__descr">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </p>
+    <div class="quests-form">
+      <h3 class="quests-form__title">Какой размер вам подойдет?</h3>
+      <div class="quests-form__area">
+        <textarea type="textarea" placeholder="Введите сообщение" class="quests-form__area-input"></textarea>
+      </div>
+    </div>
+    <div class="quests__wrapper">
+      <span class="quests__num">1 из 3</span>
+      <button class="btn-reset btn quests__btn">Следующий шаг</button>
+    </div>
+  </div>
+  <div class="container quests__container quests__container--four">
+    <h2 class="quests__title">Ваша подборка готова!</h2>
+    <p class="quests__descr">Оставьте свои контактные данные, чтобы бы мы могли отправить  подготовленный для вас каталог</p>
+    <div class="quests-data">
+      <div class="quests-data__wrapper">
+        <h3 class="quests-data__title">Получить предложение</h3>
+        <p class="quests-data__subtitle">Получите подборку подходящих для вас моделей на почту</p>
+        <div class="quests-data__inner">
+          <input class="quests-data__input" type="name" placeholder="Ваше имя">
+          <input class="quests-data__input" type="email" placeholder="E-mail">
+        </div>
+        <button class="quests-data__btn btn btn-reset btn--primary">Получить</button>
+      </div>
+      <img src="../img/quests-form-3.png" class="quests-data__img" alt="phone">
     </div>
   </div>
 </section>
