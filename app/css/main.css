@@ -475,11 +475,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 24px;
   border-top: 1px solid #808080;
 }
 .quests-data__wrapper {
   padding: 40px;
+  padding-right: 100px;
   background: var(--cameo-color);
   color: var(--light-color);
   border-top-left-radius: 4px;
@@ -521,6 +526,16 @@ a {
 }
 .quests-data__btn {
   padding: 22px 75px;
+}
+.quests-data__img {
+  margin-left: -25px;
+}
+.quests-data__img-done {
+  position: absolute;
+  top: 37px;
+  right: 166px;
+  z-index: 10;
+  opacity: 0;
 }
 
 .quests__container--four {

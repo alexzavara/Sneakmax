@@ -71,11 +71,14 @@
 
 .quests-data {
   display: flex;
+  position: relative;
+  align-items: center;
   padding-top: 24px;
   border-top: 1px solid #808080;
 
   &__wrapper {
     padding: 40px;
+    padding-right: 100px;
     background: var(--cameo-color);
     color: var(--light-color);
     border-top-left-radius: 4px;
@@ -117,6 +120,18 @@
 
   &__btn {
     padding: 22px 75px;
+  }
+
+  &__img {
+    margin-left: -25px;
+
+    &-done {
+      position: absolute;
+      top: 37px;
+      right: 166px;
+      z-index: 10;
+      opacity: 0;
+    }
   }
 }
 
